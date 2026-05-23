@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>차량관리팀 현장 매뉴얼 — Flower Family Festa 2026</title>
+<style>
+:root {
+  --primary: #7f8c8d;
+  --primary-light: #eaeded;
+  --primary-dark: #4d5656;
+  --accent: #f77f00;
+  --accent-light: #fff3e0;
+  --bg: #fafafa;
+  --text: #1a1a1a;
+  --text-light: #555;
+  --border: #e0e0e0;
+  --card-bg: #ffffff;
+  --section-gap: 2rem;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 15px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+header {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border-radius: 16px;
+  margin-bottom: var(--section-gap);
+}
+header .badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.5px;
+}
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+header .subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+header .event-info {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+.mission-box {
+  background: var(--primary-light);
+  border-left: 5px solid var(--primary);
+  padding: 1.2rem 1.5rem;
+  border-radius: 0 12px 12px 0;
+  margin-bottom: var(--section-gap);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+section {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: var(--section-gap);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  border: 1px solid var(--border);
+}
+section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+section h2 .icon {
+  width: 28px;
+  height: 28px;
+  background: var(--primary-light);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 1.2rem 0 0.6rem;
+  padding: 0.4rem 0.8rem;
+  background: var(--primary-light);
+  border-radius: 6px;
+  display: inline-block;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8rem 0;
+  font-size: 0.9rem;
+}
+th {
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+th:first-child { border-radius: 8px 0 0 0; }
+th:last-child { border-radius: 0 8px 0 0; }
+td {
+  padding: 0.55rem 0.8rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+tr:nth-child(even) td { background: #f8f9fa; }
+tr:last-child td { border-bottom: none; }
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+.checklist li {
+  padding: 0.4rem 0 0.4rem 1.8rem;
+  position: relative;
+  border-bottom: 1px solid #f0f0f0;
+}
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--primary);
+  border-radius: 3px;
+}
+.ment-table td:first-child {
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--primary-dark);
+  width: 120px;
+}
+.ment-table td:last-child {
+  color: var(--text);
+  font-style: italic;
+}
+.alert-box {
+  background: var(--accent-light);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.2rem;
+  border-radius: 0 8px 8px 0;
+  margin: 0.8rem 0;
+  font-size: 0.9rem;
+}
+.alert-box strong { color: var(--accent); }
+.timeline-highlight {
+  font-weight: 700;
+  color: var(--primary);
+}
+.not-our-job {
+  background: #fff0f0;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-top: 0.8rem;
+}
+.not-our-job li {
+  padding: 0.25rem 0;
+  color: #c0392b;
+  font-size: 0.9rem;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.contact-card {
+  padding: 0.6rem 0.8rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+.contact-card.highlight {
+  background: var(--primary-light);
+  border: 1px solid var(--primary);
+}
+.contact-card .role { font-size: 0.75rem; color: var(--text-light); }
+.contact-card .name { font-weight: 700; }
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--text-light);
+  font-size: 0.8rem;
+}
+@media print {
+  body { background: white; font-size: 13px; }
+  .container { padding: 0; max-width: 100%; }
+  header { border-radius: 0; padding: 1.5rem; }
+  section { box-shadow: none; border: 1px solid #ddd; page-break-inside: avoid; }
+  h3 { page-break-after: avoid; }
+  .checklist li::before { border-color: #333; }
+}
+@media (max-width: 600px) {
+  .container { padding: 1rem; }
+  header { padding: 1.5rem 1rem; border-radius: 12px; }
+  header h1 { font-size: 1.4rem; }
+  section { padding: 1rem; }
+  .contact-grid { grid-template-columns: 1fr; }
+  table { font-size: 0.82rem; }
+  td, th { padding: 0.4rem 0.5rem; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="badge">FLOWER FAMILY FESTA</div>
+  <h1>차량관리팀 현장 매뉴얼</h1>
+  <div class="subtitle">창립 72주년 감사예배 및 홈커밍</div>
+  <div class="event-info">2026년 06월 07일(주일) 오전 11시 | 선린교회 | 담당: 송영재 장로</div>
+</header>
+
+<div class="mission-box">
+  "안전한 주차와 시설을 관리한다"<br>
+  <span style="font-weight:400; font-size:0.9rem; color:var(--text-light);">차량관리팀은 교회 시설 전반의 안전과 주차 질서를 책임진다. 초청 가족이 도착부터 귀가까지 안전하게 이동할 수 있도록 돕고, 다른 팀의 설치 / 운반 작업을 지원한다.</span>
+</div>
+
+<section>
+  <h2><span class="icon">1</span> 행사 개요</h2>
+  <table>
+    <tr><td style="font-weight:600; width:120px;">행사명</td><td>Flower Family Festa</td></tr>
+    <tr><td style="font-weight:600;">부제</td><td>꽃은 혼자 피지 않습니다</td></tr>
+    <tr><td style="font-weight:600;">환대의 언어</td><td>당신이 있어 행복합니다</td></tr>
+    <tr><td style="font-weight:600;">일시</td><td>2026년 06월 07일(주일) 오전 11시</td></tr>
+    <tr><td style="font-weight:600;">성격</td><td>창립 72주년 감사예배 및 홈커밍, 온가족 연합예배</td></tr>
+    <tr><td style="font-weight:600;">핵심 대상</td><td>교인의 직계 가족 중 미출석자</td></tr>
+    <tr><td style="font-weight:600;">핵심 목표</td><td>미출석 가족 회복, 관계적 환대, 사후 관리 연결</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">2</span> 핵심 원칙</h2>
+  <ul class="checklist">
+    <li><strong>안전한 주차와 시설 관리를 책임진다.</strong></li>
+    <li>초청 가족이 교회에 도착하는 순간부터 안전하고 편안하게 느낄 수 있도록 한다.</li>
+    <li>시설 문제는 즉시 대응하되, 안전이 최우선이다.</li>
+    <li>다른 팀의 설치 / 이동 지원 요청에 적극 협력한다.</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="icon">3</span> 교회 공간 안내</h2>
+  <table>
+    <thead><tr><th>층</th><th>공간</th><th>당일 용도</th><th>차량관리팀 관여</th></tr></thead>
+    <tbody>
+      <tr><td style="font-weight:700; color:var(--primary-dark);">1층</td><td style="font-weight:700; color:var(--primary-dark);">주차장 / 입구</td><td>차량 안내, 첫 인사</td><td style="font-weight:700; color:var(--primary-dark);">주차 관리 전담</td></tr>
+      <tr><td>1층</td><td>로비</td><td>접수, 포토존</td><td>포토존이 진입 동선을 막지 않는지 확인</td></tr>
+      <tr><td>지하</td><td>사랑채플</td><td>예배실</td><td>시설 점검</td></tr>
+      <tr><td>3층</td><td>주방 / 식당</td><td>애찬 장소</td><td>가구 이동, 시설 문제 대응</td></tr>
+      <tr><td>4층</td><td>소망채플</td><td>사진관</td><td>배경천 / 의자 운반 설치 지원</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">4</span> 당일 전체 타임라인</h2>
+  <table>
+    <thead><tr><th>시간</th><th>흐름</th><th>차량관리팀 주요 역할</th></tr></thead>
+    <tbody>
+      <tr><td class="timeline-highlight">10:00</td><td>집결</td><td>주차장 정리, 시설 점검, 설치 지원</td></tr>
+      <tr><td class="timeline-highlight">10:30</td><td>초청 가족 도착</td><td>주차 안내, 승하차 보조</td></tr>
+      <tr><td class="timeline-highlight">11:00</td><td>예배 시작</td><td>주차장 관리 유지, 늦은 차량 안내</td></tr>
+      <tr><td class="timeline-highlight">12:00</td><td>예배 종료</td><td>시설 모니터링, 이동 동선 안전</td></tr>
+      <tr><td class="timeline-highlight">13:00~</td><td>마무리</td><td>출차 안내, 시설 복구, 원상복구</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">5</span> 사전 준비 체크리스트</h2>
+
+  <h3>D-7 (1주 전)</h3>
+  <ul class="checklist">
+    <li>주일 차량 노선 및 주차장 수용량 확인</li>
+    <li>예상 차량 증가분 판단 (초청 가족 동반)</li>
+    <li>인근 임시 주차 가능 공간 확인</li>
+    <li>1층 포토존이 차량 진입 / 보행 동선을 막지 않는지 확인 (홍보팀과 조율)</li>
+    <li>4층 소망채플 사진관 설치에 필요한 물품 확인 (교육팀과 조율)</li>
+    <li>각 층 시설 점검 (화장실, 엘리베이터, 계단 조명, 에어컨 등)</li>
+  </ul>
+
+  <h3>D-1 (전날)</h3>
+  <ul class="checklist">
+    <li>주차장 정리 (불필요한 물건 제거)</li>
+    <li>4층 사진관 설치 지원 (배경천 / 의자 / 소품 운반 &mdash; 교육팀 요청 시)</li>
+    <li>주차 안내 표지판 준비</li>
+    <li>비상 장비 점검 (소화기, 비상등, 구급약품)</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="icon">6</span> 시간대별 상세 동선</h2>
+
+  <h3>10:00~10:30 — 주차장 정리 / 설치 지원</h3>
+  <ul class="checklist">
+    <li>차량관리팀 주차장 집결</li>
+    <li>주차장 공간 확인 &mdash; 예상 차량 대비 여유 공간 확보</li>
+    <li>주차 안내 표지판 설치</li>
+    <li>각 층 시설 순회 점검:
+      화장실 청결 / 비품 확인,
+      엘리베이터 정상 작동 확인,
+      계단 조명 확인,
+      에어컨 가동 확인 (사랑채플, 3층 식당, 4층 소망채플)</li>
+    <li>교육팀 요청 시 4층 사진관 설치 지원 (운반 / 고정)</li>
+    <li>홍보팀 요청 시 대형 설치물 운반 지원</li>
+    <li>기획팀에 시설 점검 완료 보고</li>
+  </ul>
+
+  <h3>10:30~11:00 — 주차 안내 / 승하차 보조</h3>
+  <ul class="checklist">
+    <li>초청 가족 차량 도착 &mdash; 주차 안내 시작</li>
+    <li>어르신 / 장애인 / 아동 동반 차량은 입구 가까이 안내</li>
+    <li>승하차 시 안전 보조</li>
+    <li>주차장 만석 시 임시 주차 공간 안내</li>
+    <li>이중주차 발생 시 연락처 확인하여 정리</li>
+  </ul>
+
+  <h3>11:00~12:00 — 예배 중</h3>
+  <ul class="checklist">
+    <li>주차장 상시 모니터링 (늦은 차량 안내)</li>
+    <li>시설 이상 발생 시 즉시 대응 (정전, 수도, 에어컨 등)</li>
+    <li>엘리베이터 작동 상태 확인 (예배 후 대량 이동 대비)</li>
+  </ul>
+
+  <h3>12:00~13:00 — 예배 후</h3>
+  <ul class="checklist">
+    <li>4층 &harr; 3층 이동 시 엘리베이터 / 계단 안전 확인</li>
+    <li>복도 / 계단에서 혼잡 시 안전 관리</li>
+    <li>시설 문제 발생 시 즉시 대응</li>
+    <li>주방팀 요청 시 가구 이동 지원</li>
+  </ul>
+
+  <h3>13:00~13:30 — 출차 / 정리 / 원상복구</h3>
+  <ul class="checklist">
+    <li>귀가 차량 출차 안내 &mdash; 안전한 출차 순서 관리</li>
+    <li>이중주차 차량 정리</li>
+    <li>주차 안내 표지판 철거</li>
+    <li>각 층 시설 원상복구 확인:
+      4층 사진관 철거 지원 (교육팀 요청 시),
+      3층 식탁 / 의자 원상복구 (주방팀 지원),
+      각 층 조명 / 에어컨 OFF,
+      화장실 최종 점검</li>
+    <li>주차장 최종 정리</li>
+    <li>기획팀에 원상복구 완료 보고</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="icon">7</span> 현장 멘트 모음</h2>
+  <table class="ment-table">
+    <thead><tr><th>상황</th><th>멘트</th></tr></thead>
+    <tbody>
+      <tr><td>차량 도착 시</td><td>"환영합니다. 이쪽으로 주차하시면 됩니다."</td></tr>
+      <tr><td>승하차 시</td><td>"조심히 내리세요. 오늘 함께해 주셔서 감사합니다."</td></tr>
+      <tr><td>주차장 만석 시</td><td>"주차장이 다 찼습니다. 인근에 주차 가능합니다. 안내해 드리겠습니다."</td></tr>
+      <tr><td>출차 안내</td><td>"출차하시는 분은 이쪽으로 나가시면 됩니다. 조심히 가세요."</td></tr>
+      <tr><td>시설 문제 발생</td><td>"잠시 불편을 드려 죄송합니다. 바로 확인하겠습니다."</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">8</span> 차량관리팀이 맡지 않는 일</h2>
+  <p style="font-size:0.9rem; color:var(--text-light); margin-bottom:0.5rem;">아래 사항은 해당 팀이 맡는다. 문의를 받으면 담당 팀으로 연결한다.</p>
+  <div class="not-our-job">
+    <ul>
+      <li>초청 가족 접수 / 안내 &rarr; 안내팀 / 새가족팀</li>
+      <li>예배실 좌석 안내 &rarr; 안내팀</li>
+      <li>홍보물 디자인 / 제작 &rarr; 홍보팀</li>
+      <li>사진 촬영 &rarr; 교육팀</li>
+      <li>식사 조리 / 배식 &rarr; 주방팀</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="icon">9</span> 비상 상황 대응</h2>
+  <table>
+    <thead><tr><th style="width:35%;">상황</th><th>대응</th></tr></thead>
+    <tbody>
+      <tr><td>주차장 만석</td><td>임시 주차 공간 안내, 기획팀에 보고</td></tr>
+      <tr><td>차량 사고 (접촉 등)</td><td>당사자 확인, 사진 촬영, 필요 시 보험 처리 안내, 기획팀 보고</td></tr>
+      <tr><td>정전</td><td>배전반 확인, 비상등 점등, 기획팀에 즉시 보고, 필수 장비 복구 우선</td></tr>
+      <tr><td>수도 / 배관 문제</td><td>해당 구역 사용 중지, 응급 조치, 기획팀 보고</td></tr>
+      <tr><td>엘리베이터 고장</td><td>사용 중지 안내, 계단 이용 안내, 어르신 / 장애인 동행 지원</td></tr>
+      <tr><td>안전 사고 (낙상 등)</td><td>구급약품 응급 처치, 심각 시 119 신고, 기획팀 / 담임목사 보고</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">10</span> 협업 포인트</h2>
+  <table>
+    <thead><tr><th>협업 팀</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td>교육팀</td><td>4층 사진관 설치 / 철거 물품 운반</td></tr>
+      <tr><td>홍보팀</td><td>대형 설치물 운반 지원</td></tr>
+      <tr><td>주방팀</td><td>3층 가구 이동, 시설 문제 대응</td></tr>
+      <tr><td>안내팀</td><td>주차 동선과 보행 동선 분리</td></tr>
+      <tr><td>기획팀</td><td>시설 점검 보고, 비상 상황 보고</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">11</span> 연락 체계</h2>
+  <div class="contact-grid">
+    <div class="contact-card"><div class="role">전체 총괄</div><div class="name">반승상 목사</div></div>
+    <div class="contact-card"><div class="role">기획팀 총괄</div><div class="name">김정상 장로</div></div>
+    <div class="contact-card"><div class="role">기획 실무</div><div class="name">한민석 목사</div></div>
+    <div class="contact-card highlight"><div class="role">차량관리팀</div><div class="name">송영재 장로</div></div>
+    <div class="contact-card"><div class="role">안내팀</div><div class="name">김영이 권사</div></div>
+    <div class="contact-card"><div class="role">교육팀 (사진관)</div><div class="name">장남제 피택 장로 / 김도현 전도사</div></div>
+    <div class="contact-card"><div class="role">주방팀</div><div class="name">이미숙 집사</div></div>
+    <div class="contact-card"><div class="role">홍보팀</div><div class="name">김미란 집사</div></div>
+  </div>
+</section>
+
+<footer>
+  선린교회 Flower Family Festa 2026 | 차량관리팀 현장 매뉴얼
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>예배찬양팀 현장 매뉴얼 — Flower Family Festa 2026</title>
+<style>
+:root {
+  --primary: #e67e22;
+  --primary-light: #fdebd0;
+  --primary-dark: #a04000;
+  --accent: #f77f00;
+  --accent-light: #fff3e0;
+  --bg: #fafafa;
+  --text: #1a1a1a;
+  --text-light: #555;
+  --border: #e0e0e0;
+  --card-bg: #ffffff;
+  --section-gap: 2rem;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 15px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+header {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border-radius: 16px;
+  margin-bottom: var(--section-gap);
+}
+header .badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.5px;
+}
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+header .subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+header .event-info {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+.mission-box {
+  background: var(--primary-light);
+  border-left: 5px solid var(--primary);
+  padding: 1.2rem 1.5rem;
+  border-radius: 0 12px 12px 0;
+  margin-bottom: var(--section-gap);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+section {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: var(--section-gap);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  border: 1px solid var(--border);
+}
+section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+section h2 .icon {
+  width: 28px;
+  height: 28px;
+  background: var(--primary-light);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 1.2rem 0 0.6rem;
+  padding: 0.4rem 0.8rem;
+  background: var(--primary-light);
+  border-radius: 6px;
+  display: inline-block;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8rem 0;
+  font-size: 0.9rem;
+}
+th {
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+th:first-child { border-radius: 8px 0 0 0; }
+th:last-child { border-radius: 0 8px 0 0; }
+td {
+  padding: 0.55rem 0.8rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+tr:nth-child(even) td { background: #f8f9fa; }
+tr:last-child td { border-bottom: none; }
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+.checklist li {
+  padding: 0.4rem 0 0.4rem 1.8rem;
+  position: relative;
+  border-bottom: 1px solid #f0f0f0;
+}
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--primary);
+  border-radius: 3px;
+}
+.ment-table td:first-child {
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--primary-dark);
+  width: 120px;
+}
+.ment-table td:last-child {
+  color: var(--text);
+  font-style: italic;
+}
+.alert-box {
+  background: var(--accent-light);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.2rem;
+  border-radius: 0 8px 8px 0;
+  margin: 0.8rem 0;
+  font-size: 0.9rem;
+}
+.alert-box strong { color: var(--accent); }
+.timeline-highlight {
+  font-weight: 700;
+  color: var(--primary);
+}
+.not-our-job {
+  background: #fff0f0;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-top: 0.8rem;
+}
+.not-our-job li {
+  padding: 0.25rem 0;
+  color: #c0392b;
+  font-size: 0.9rem;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.contact-card {
+  padding: 0.6rem 0.8rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+.contact-card.highlight {
+  background: var(--primary-light);
+  border: 1px solid var(--primary);
+}
+.contact-card .role { font-size: 0.75rem; color: var(--text-light); }
+.contact-card .name { font-weight: 700; }
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--text-light);
+  font-size: 0.8rem;
+}
+@media print {
+  body { background: white; font-size: 13px; }
+  .container { padding: 0; max-width: 100%; }
+  header { border-radius: 0; padding: 1.5rem; }
+  section { box-shadow: none; border: 1px solid #ddd; page-break-inside: avoid; }
+  h3 { page-break-after: avoid; }
+  .checklist li::before { border-color: #333; }
+}
+@media (max-width: 600px) {
+  .container { padding: 1rem; }
+  header { padding: 1.5rem 1rem; border-radius: 12px; }
+  header h1 { font-size: 1.4rem; }
+  section { padding: 1rem; }
+  .contact-grid { grid-template-columns: 1fr; }
+  table { font-size: 0.82rem; }
+  td, th { padding: 0.4rem 0.5rem; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="badge">FLOWER FAMILY FESTA</div>
+  <h1>예배찬양팀 현장 매뉴얼</h1>
+  <div class="subtitle">창립 72주년 감사예배 및 홈커밍</div>
+  <div class="event-info">2026년 06월 07일(주일) 오전 11시 | 선린교회 | 담당: 이명숙 집사, 김정현 전도사</div>
+</header>
+
+<div class="mission-box">
+  "처음 온 사람도 함께 부를 수 있는 예배를 만든다"<br>
+  <span style="font-weight:400; font-size:0.9rem; color:var(--text-light);">공연이 아니라, 처음 온 사람도 함께 부를 수 있는 예배를 만든다. 익숙한 찬양을 선곡하고, 초청 가족이 소외감을 느끼지 않도록 분위기를 이끈다.</span>
+</div>
+
+<section>
+  <h2><span class="icon">1</span> 행사 개요</h2>
+  <table>
+    <tr><td style="font-weight:600; width:120px;">행사명</td><td>Flower Family Festa</td></tr>
+    <tr><td style="font-weight:600;">부제</td><td>꽃은 혼자 피지 않습니다</td></tr>
+    <tr><td style="font-weight:600;">환대의 언어</td><td>당신이 있어 행복합니다</td></tr>
+    <tr><td style="font-weight:600;">일시</td><td>2026년 06월 07일(주일) 오전 11시</td></tr>
+    <tr><td style="font-weight:600;">성격</td><td>창립 72주년 감사예배 및 홈커밍, 온가족 연합예배</td></tr>
+    <tr><td style="font-weight:600;">핵심 대상</td><td>교인의 직계 가족 중 미출석자</td></tr>
+    <tr><td style="font-weight:600;">핵심 목표</td><td>미출석 가족 회복, 관계적 환대, 사후 관리 연결</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">2</span> 핵심 원칙</h2>
+  <ul class="checklist">
+    <li>예배의 분위기는 "환대"다 — 공연이 아니라, 처음 온 사람도 함께 부를 수 있는 예배를 만든다</li>
+    <li>별도 웰컴송은 없다. 접수처·로비·예배실 안내와 예배 시작 환영 멘트로 환영 분위기를 만든다</li>
+    <li>초청 가족에게 낯선 교회 내부 용어를 사용하지 않는다</li>
+    <li>꽃 전달·기도카드 순서와 찬양의 흐름이 자연스럽게 연결되도록 한다</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="icon">3</span> 교회 공간 안내</h2>
+  <table>
+    <thead><tr><th>층</th><th>공간</th><th>당일 용도</th></tr></thead>
+    <tbody>
+      <tr><td>1층</td><td>로비</td><td>초청 가족 접수, 자유 포토존, 첫 안내 거점</td></tr>
+      <tr><td>1층</td><td>주차장·입구</td><td>차량 안내, 첫 인사</td></tr>
+      <tr><td>지하</td><td>사랑채플</td><td>예배실 (본당)</td></tr>
+      <tr><td>3층</td><td>주방·복도</td><td>애찬 장소, 기대카드 전시</td></tr>
+      <tr><td>4층</td><td>소망채플</td><td>가족사진 스튜디오</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">4</span> 당일 전체 타임라인</h2>
+  <table>
+    <thead><tr><th>시간</th><th>흐름</th><th>예배찬양팀 주요 역할</th></tr></thead>
+    <tbody>
+      <tr><td class="timeline-highlight">10:00</td><td>집결·안내 시작</td><td>리허설·음향 점검</td></tr>
+      <tr><td class="timeline-highlight">10:30</td><td>초청 가족 도착</td><td>리허설 마무리, 대기</td></tr>
+      <tr><td class="timeline-highlight">10:55</td><td>예배 직전</td><td>최종 음향 확인, 찬양 준비</td></tr>
+      <tr><td class="timeline-highlight">11:00</td><td>예배 시작</td><td>회중찬양 인도</td></tr>
+      <tr><td class="timeline-highlight">11:00~12:00</td><td>예배 진행</td><td>꽃 전달·기도카드 순서 찬양 연계</td></tr>
+      <tr><td class="timeline-highlight">12:00</td><td>예배 종료</td><td>폐회 찬양, 마무리</td></tr>
+      <tr><td class="timeline-highlight">12:00~</td><td>애찬·사진</td><td>— (예배 후 역할 종료)</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">5</span> 예배찬양팀 미션</h2>
+  <div class="alert-box"><strong>담당</strong>: 이명숙 집사, 김정현 전도사</div>
+  <p style="margin-top:0.8rem; font-size:0.95rem;">예배찬양팀은 이 날의 예배가 공연이 아니라 "함께하는 예배"가 되도록 돕는다. 익숙한 찬양을 선곡하고, 초청 가족이 소외감을 느끼지 않도록 분위기를 이끈다.</p>
+</section>
+
+<section>
+  <h2><span class="icon">6</span> 사전 준비 체크리스트</h2>
+
+  <h3>D-14 (2주 전)</h3>
+  <ul class="checklist">
+    <li>설교 주제와 예배 테마 확인 — 찬양 선곡 방향 결정</li>
+    <li>회중이 함께 부를 수 있는 익숙한 찬양 중심으로 선곡</li>
+    <li>호산나찬양대 운영 방식 확인 (가운 착용 여부, 특별찬양 또는 회중석 참여)</li>
+    <li>꽃 전달 순서 타이밍 확인 — 어떤 찬양 중에 진행할지 결정</li>
+  </ul>
+
+  <h3>D-7 (1주 전)</h3>
+  <ul class="checklist">
+    <li>찬양 리스트 확정 및 방송팀에 자막 전달</li>
+    <li>기도카드 안내 멘트 내용 확인 — 부드럽고 짧게</li>
+    <li>초청 영상 상영 시점 확인 (방송팀과 조율)</li>
+    <li>리허설 일정 확정</li>
+  </ul>
+
+  <h3>D-1 (전날)</h3>
+  <ul class="checklist">
+    <li>찬양팀 최종 리허설</li>
+    <li>음향 밸런스 확인 (방송팀과 함께)</li>
+    <li>예배 순서 최종 확인 (큐시트)</li>
+    <li>마이크·악기 배치 확인</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="icon">7</span> 시간대별 상세 동선</h2>
+
+  <h3>10:00~10:30 — 리허설·점검</h3>
+  <ul class="checklist">
+    <li>예배찬양팀 전원 사랑채플 집결</li>
+    <li>악기 셋업 및 음향 점검 (방송팀과 협력)</li>
+    <li>찬양 순서대로 리허설 (2~3곡)</li>
+    <li>마이크 볼륨, 모니터 확인</li>
+    <li>꽃 전달 순서 리허설 — 찬양 중 전달 시 타이밍 연습</li>
+  </ul>
+
+  <h3>10:30~10:55 — 리허설 마무리·준비</h3>
+  <ul class="checklist">
+    <li>리허설 종료, 무대 정리</li>
+    <li>초청 가족 입장 시작 — 찬양팀은 대기</li>
+    <li>예배 시작 전 기도</li>
+    <li>방송팀과 자막·영상 전환 순서 최종 확인</li>
+  </ul>
+
+  <h3>11:00~12:00 — 예배 진행</h3>
+  <ul class="checklist">
+    <li>환영 인사 후 회중찬양 시작</li>
+    <li>초청 가족도 함께 부를 수 있도록 익숙한 멜로디 중심</li>
+    <li>꽃 전달 순서: 찬양과 자연스럽게 연결 — 갑자기 끊기지 않도록</li>
+    <li>기도카드 안내 시 찬양 분위기 유지</li>
+    <li>내부 용어 사용 자제 (예: "은혜 받으셨습니까" 대신 자연스러운 표현)</li>
+    <li>폐회 찬양 — 감사와 환대의 분위기로 마무리</li>
+  </ul>
+
+  <h3>12:00~ — 예배 후</h3>
+  <ul class="checklist">
+    <li>악기·장비 정리</li>
+    <li>사랑채플 무대 원상복구 (단체사진 촬영 공간 확보)</li>
+    <li>애찬 참여 (자유)</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="icon">8</span> 현장 멘트 참고</h2>
+  <table class="ment-table">
+    <thead><tr><th>상황</th><th>멘트</th></tr></thead>
+    <tbody>
+      <tr><td>예배 시작 환영</td><td>"오늘 함께해 주신 모든 분을 환영합니다. 처음 오신 분도 편안하게 함께 예배드리겠습니다."</td></tr>
+      <tr><td>찬양 전 안내</td><td>"다 함께 찬양하겠습니다. 가사는 화면에 나옵니다."</td></tr>
+      <tr><td>꽃 전달 전</td><td>"사랑하는 가족에게 마음을 담은 꽃을 전해 드리는 시간입니다."</td></tr>
+      <tr><td>기도카드 안내</td><td>"미리 적어 주신 기도카드를 통해 가족을 위한 기도를 드리겠습니다."</td></tr>
+      <tr><td>폐회 시</td><td>"오늘 함께해 주셔서 감사합니다. 이어서 가족사진 촬영과 식사가 준비되어 있습니다."</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">9</span> 예배찬양팀이 맡지 않는 일</h2>
+  <p style="font-size:0.9rem; color:var(--text-light); margin-bottom:0.5rem;">아래 사항은 각 전담 팀이 맡는다.</p>
+  <div class="not-our-job">
+    <ul>
+      <li>음향·자막 기술 조작 → 방송팀</li>
+      <li>초청 영상 상영 → 방송팀</li>
+      <li>초청 가족 접수·안내 → 새가족팀·안내팀</li>
+      <li>예배 후 사진관·애찬 안내 → 안내팀·교육팀</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="icon">10</span> 비상 상황 대응</h2>
+  <table>
+    <thead><tr><th style="width:35%;">상황</th><th>대응</th></tr></thead>
+    <tbody>
+      <tr><td>마이크·악기 장비 고장</td><td>방송팀에 즉시 알림, 여분 마이크 사용, 필요 시 어쿠스틱으로 전환</td></tr>
+      <tr><td>자막이 나오지 않음</td><td>찬양 인도자가 가사를 천천히 읽어 주며 진행, 방송팀과 소통</td></tr>
+      <tr><td>꽃 전달 타이밍 어긋남</td><td>찬양을 한 절 더 반복하며 시간 확보</td></tr>
+      <tr><td>호산나찬양대 불참</td><td>계획된 특별찬양을 회중찬양으로 대체</td></tr>
+      <tr><td>예배 시간 초과</td><td>기획팀과 소통, 폐회 찬양 단축</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">11</span> 협업 포인트</h2>
+  <table>
+    <thead><tr><th>협업 팀</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td>방송팀</td><td>자막 전달, 음향 점검, 영상 전환 타이밍</td></tr>
+      <tr><td>호산나찬양대</td><td>운영 방식 확인 (가운·좌석·특별찬양 여부)</td></tr>
+      <tr><td>홍보팀</td><td>초청 영상 톤·메시지 확인</td></tr>
+      <tr><td>기획팀</td><td>예배 전체 흐름·큐시트 조율</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">12</span> 연락 체계</h2>
+  <div class="contact-grid">
+    <div class="contact-card"><div class="role">전체 총괄</div><div class="name">반승상 목사</div></div>
+    <div class="contact-card"><div class="role">기획팀 총괄</div><div class="name">김정상 장로</div></div>
+    <div class="contact-card"><div class="role">기획 실무</div><div class="name">한민석 목사</div></div>
+    <div class="contact-card highlight"><div class="role">예배찬양팀</div><div class="name">이명숙 집사 / 김정현 전도사</div></div>
+    <div class="contact-card"><div class="role">방송팀</div><div class="name">김정원 집사</div></div>
+    <div class="contact-card"><div class="role">안내팀</div><div class="name">김영이 권사</div></div>
+    <div class="contact-card"><div class="role">새가족팀</div><div class="name">문영희 권사</div></div>
+  </div>
+</section>
+
+<footer>
+  선린교회 Flower Family Festa 2026 | 예배찬양팀 현장 매뉴얼
+</footer>
+
+</div>
+</body>
+</html>

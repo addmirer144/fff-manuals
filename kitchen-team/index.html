@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주방팀 현장 매뉴얼 — Flower Family Festa 2026</title>
+<style>
+:root {
+  --primary: #27ae60;
+  --primary-light: #d5f5e3;
+  --primary-dark: #1e8449;
+  --accent: #f77f00;
+  --accent-light: #fff3e0;
+  --bg: #fafafa;
+  --text: #1a1a1a;
+  --text-light: #555;
+  --border: #e0e0e0;
+  --card-bg: #ffffff;
+  --section-gap: 2rem;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 15px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+header {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border-radius: 16px;
+  margin-bottom: var(--section-gap);
+}
+header .badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.5px;
+}
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+header .subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+header .event-info {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+.mission-box {
+  background: var(--primary-light);
+  border-left: 5px solid var(--primary);
+  padding: 1.2rem 1.5rem;
+  border-radius: 0 12px 12px 0;
+  margin-bottom: var(--section-gap);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+.principle-box {
+  background: var(--primary-light);
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: var(--section-gap);
+}
+.principle-box h3 {
+  display: block;
+  background: var(--primary);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin: 0 0 0.8rem 0;
+}
+.principle-box ul {
+  list-style: none;
+  padding: 0;
+}
+.principle-box li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(39,174,96,0.2);
+  font-size: 0.95rem;
+  color: var(--primary-dark);
+  font-weight: 500;
+}
+.principle-box li:last-child { border-bottom: none; }
+.principle-box li strong { color: var(--text); }
+section {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: var(--section-gap);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  border: 1px solid var(--border);
+}
+section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+section h2 .icon {
+  width: 28px;
+  height: 28px;
+  background: var(--primary-light);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 1.2rem 0 0.6rem;
+  padding: 0.4rem 0.8rem;
+  background: var(--primary-light);
+  border-radius: 6px;
+  display: inline-block;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8rem 0;
+  font-size: 0.9rem;
+}
+th {
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+th:first-child { border-radius: 8px 0 0 0; }
+th:last-child { border-radius: 0 8px 0 0; }
+td {
+  padding: 0.55rem 0.8rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+tr:nth-child(even) td { background: #f8f9fa; }
+tr:last-child td { border-bottom: none; }
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+.checklist li {
+  padding: 0.4rem 0 0.4rem 1.8rem;
+  position: relative;
+  border-bottom: 1px solid #f0f0f0;
+}
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--primary);
+  border-radius: 3px;
+}
+.ment-table td:first-child {
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--primary-dark);
+  width: 120px;
+}
+.ment-table td:last-child {
+  color: var(--text);
+  font-style: italic;
+}
+.alert-box {
+  background: var(--accent-light);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.2rem;
+  border-radius: 0 8px 8px 0;
+  margin: 0.8rem 0;
+  font-size: 0.9rem;
+}
+.alert-box strong { color: var(--accent); }
+.timeline-highlight {
+  font-weight: 700;
+  color: var(--primary);
+}
+.not-our-job {
+  background: #fff0f0;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-top: 0.8rem;
+}
+.not-our-job li {
+  padding: 0.25rem 0;
+  color: #c0392b;
+  font-size: 0.9rem;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.contact-card {
+  padding: 0.6rem 0.8rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+.contact-card.highlight {
+  background: var(--primary-light);
+  border: 1px solid var(--primary);
+}
+.contact-card .role { font-size: 0.75rem; color: var(--text-light); }
+.contact-card .name { font-weight: 700; }
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--text-light);
+  font-size: 0.8rem;
+}
+@media print {
+  body { background: white; font-size: 13px; }
+  .container { padding: 0; max-width: 100%; }
+  header { border-radius: 0; padding: 1.5rem; }
+  section { box-shadow: none; border: 1px solid #ddd; page-break-inside: avoid; }
+  h3 { page-break-after: avoid; }
+  .checklist li::before { border-color: #333; }
+}
+@media (max-width: 600px) {
+  .container { padding: 1rem; }
+  header { padding: 1.5rem 1rem; border-radius: 12px; }
+  header h1 { font-size: 1.4rem; }
+  section { padding: 1rem; }
+  .contact-grid { grid-template-columns: 1fr; }
+  table { font-size: 0.82rem; }
+  td, th { padding: 0.4rem 0.5rem; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="badge">FLOWER FAMILY FESTA</div>
+  <h1>주방팀 현장 매뉴얼</h1>
+  <div class="subtitle">창립 72주년 감사예배 및 홈커밍</div>
+  <div class="event-info">2026년 06월 07일(주일) 오전 11시 | 선린교회 | 담당: 이미숙 집사</div>
+</header>
+
+<div class="mission-box">
+  "초청 가족이 환대받는 식탁을 준비한다"<br>
+  <span style="font-weight:400; font-size:0.9rem; color:var(--text-light);">주방팀은 맛있는 식사를 준비할 뿐 아니라, 초청 가족이 "이 교회는 따뜻한 곳이다"라고 느낄 수 있는 식탁 경험을 만든다.</span>
+</div>
+
+<div class="principle-box">
+  <h3>애찬 운영 3원칙</h3>
+  <ul>
+    <li><strong>초청 가족이 줄에서 혼자 서지 않는다.</strong> &rarr; 초청자(교인) 또는 새가족팀이 동행</li>
+    <li><strong>초청 가족이 식탁에서 혼자 앉지 않는다.</strong> &rarr; 목장 리더 또는 교인이 함께 앉도록 사전 조율</li>
+    <li><strong>목장 리더가 자연스럽게 인사한다.</strong> &rarr; 목장 연결이 가능한 경우 식사 자리에서 첫 만남</li>
+  </ul>
+</div>
+
+<section>
+  <h2><span class="icon">1</span> 행사 개요</h2>
+  <table>
+    <tr><td style="font-weight:600; width:120px;">행사명</td><td>Flower Family Festa</td></tr>
+    <tr><td style="font-weight:600;">부제</td><td>꽃은 혼자 피지 않습니다</td></tr>
+    <tr><td style="font-weight:600;">환대의 언어</td><td>당신이 있어 행복합니다</td></tr>
+    <tr><td style="font-weight:600;">일시</td><td>2026년 06월 07일(주일) 오전 11시</td></tr>
+    <tr><td style="font-weight:600;">성격</td><td>창립 72주년 감사예배 및 홈커밍, 온가족 연합예배</td></tr>
+    <tr><td style="font-weight:600;">핵심 대상</td><td>교인의 직계 가족 중 미출석자</td></tr>
+    <tr><td style="font-weight:600;">핵심 목표</td><td>미출석 가족 회복, 관계적 환대, 사후 관리 연결</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">2</span> 교회 공간 안내</h2>
+  <table>
+    <thead><tr><th>층</th><th>공간</th><th>당일 용도</th></tr></thead>
+    <tbody>
+      <tr><td>1층</td><td>로비</td><td>초청 가족 접수, 자유 포토존</td></tr>
+      <tr><td>지하</td><td>사랑채플</td><td>예배실 (본당)</td></tr>
+      <tr><td style="font-weight:700; color:var(--primary-dark);">3층</td><td style="font-weight:700; color:var(--primary-dark);">주방 / 식당</td><td style="font-weight:700; color:var(--primary-dark);">애찬 장소 (주방팀 운영)</td></tr>
+      <tr><td>3층</td><td>복도</td><td>기도카드 전시</td></tr>
+      <tr><td>4층</td><td>소망채플</td><td>가족사진 스튜디오</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">3</span> 당일 전체 타임라인</h2>
+  <table>
+    <thead><tr><th>시간</th><th>흐름</th><th>주방팀 주요 역할</th></tr></thead>
+    <tbody>
+      <tr><td class="timeline-highlight">10:00</td><td>집결</td><td>주방 준비 시작, 식기 / 식탁 세팅</td></tr>
+      <tr><td class="timeline-highlight">10:30</td><td>초청 가족 도착</td><td>조리 진행</td></tr>
+      <tr><td class="timeline-highlight">11:00</td><td>예배 시작</td><td>조리 마무리, 배식 준비</td></tr>
+      <tr><td class="timeline-highlight">12:00</td><td>예배 종료</td><td>배식 시작</td></tr>
+      <tr><td class="timeline-highlight">12:00~13:00</td><td>애찬</td><td>배식 운영, 초청 가족 배려</td></tr>
+      <tr><td class="timeline-highlight">13:00~</td><td>마무리</td><td>뒷정리, 식기 세척, 원상복구</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">4</span> 사전 준비 체크리스트</h2>
+
+  <h3>D-7 (1주 전)</h3>
+  <ul class="checklist">
+    <li>메뉴 확정 및 예상 인원 수 확인 (기획팀과 조율)</li>
+    <li>식재료 구매 목록 작성 및 예산 확인</li>
+    <li>초청 가족 예상 인원 확인 (새가족팀 접수 현황)</li>
+    <li>초청 가족 좌석 배치 방안 결정:
+      별도 테이블 구분? 또는 교인과 자연스럽게 섞기?
+      목장 리더 / 새가족팀이 함께 앉을 수 있는 좌석 배치</li>
+    <li>아동 / 어르신 특별 배려 메뉴 필요 여부 확인</li>
+    <li>식기 / 식탁보 / 수저 수량 확인</li>
+  </ul>
+
+  <h3>D-1 (전날)</h3>
+  <ul class="checklist">
+    <li>식재료 사전 준비 (손질 가능한 것)</li>
+    <li>식기 / 수저 수량 최종 확인</li>
+    <li>식탁 배치 확인 (3층 식당)</li>
+    <li>주방 기기 점검 (가스레인지, 밥솥, 냉장고 등)</li>
+    <li>주방팀 인원 / 역할 배분 확인</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="icon">5</span> 시간대별 상세 동선</h2>
+
+  <h3>10:00~11:00 — 주방 준비 / 조리</h3>
+  <ul class="checklist">
+    <li>주방팀 3층 주방 집결</li>
+    <li>식탁 / 의자 배치 확인 (차량관리팀 지원 필요 시 요청)</li>
+    <li>식탁보 / 수저 / 접시 세팅</li>
+    <li>조리 시작 &mdash; 메뉴별 시간 역순 배치</li>
+    <li>음료 / 물 준비</li>
+    <li>초청 가족 좌석 위치 표시 (필요 시 &mdash; 새가족팀과 확인)</li>
+    <li>기획팀에서 전달한 예상 인원 수 최종 확인</li>
+  </ul>
+
+  <h3>11:00~12:00 — 조리 마무리 / 배식 준비</h3>
+  <ul class="checklist">
+    <li>메인 요리 마무리</li>
+    <li>배식 동선 세팅 (줄 서기 &rarr; 배식 &rarr; 좌석)</li>
+    <li>국 / 반찬 / 밥 배식 순서 확인</li>
+    <li>식사 안내 표지판 설치 (메뉴 안내)</li>
+    <li>배식 인원 배치 확인</li>
+    <li>위생 점검 (앞치마, 위생장갑, 집게 등)</li>
+  </ul>
+
+  <h3>12:00~12:30 — 배식 시작</h3>
+  <ul class="checklist">
+    <li>예배 종료 후 교인 / 초청 가족 3층 이동 시작</li>
+    <li>배식 시작 &mdash; 안내팀이 3층 입구에서 동선 안내</li>
+    <li>초청 가족이 줄에서 혼자 서지 않는지 확인</li>
+    <li>혼자 서 있는 분 발견 시: "함께 식사하실 분이 곧 오실 겁니다. 이쪽에서 편하게 기다려 주세요."</li>
+    <li>아동 / 어르신 우선 배식 배려</li>
+    <li>음식이 부족해 보이면 기획팀에 즉시 보고</li>
+  </ul>
+
+  <h3>12:30~13:00 — 식사 시간</h3>
+  <ul class="checklist">
+    <li>추가 배식 필요 시 대응 (밥 / 국 추가)</li>
+    <li>초청 가족 식탁에 목장 리더 / 교인이 함께 앉았는지 확인</li>
+    <li>빈 그릇 수거 시작 (식사 마친 테이블부터)</li>
+    <li>후식 / 음료 제공 (준비된 경우)</li>
+  </ul>
+
+  <h3>13:00~13:30 — 뒷정리</h3>
+  <ul class="checklist">
+    <li>잔여 음식 정리</li>
+    <li>식기 / 수저 세척</li>
+    <li>식탁 / 의자 정리</li>
+    <li>주방 청소 (가스 밸브, 환풍기 등 확인)</li>
+    <li>쓰레기 분리수거</li>
+    <li>3층 원상복구 확인</li>
+    <li>잔여 식재료 처리 방안 결정</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="icon">6</span> 현장 멘트 모음</h2>
+  <table class="ment-table">
+    <thead><tr><th>상황</th><th>멘트</th></tr></thead>
+    <tbody>
+      <tr><td>식사 안내</td><td>"식사가 준비되어 있습니다. 이쪽으로 오시면 됩니다."</td></tr>
+      <tr><td>배식 시</td><td>"더 필요하시면 말씀해 주세요."</td></tr>
+      <tr><td>초청 가족에게</td><td>"오늘 와 주셔서 감사합니다. 맛있게 드세요."</td></tr>
+      <tr><td>혼자 서 계신 분</td><td>"이쪽에서 편하게 앉아 계시면 됩니다. 곧 함께 식사하실 분이 오실 겁니다."</td></tr>
+      <tr><td>마무리 시</td><td>"식사 맛있게 하셨나요? 감사합니다."</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">7</span> 주방팀이 맡지 않는 일</h2>
+  <p style="font-size:0.9rem; color:var(--text-light); margin-bottom:0.5rem;">아래 사항은 해당 팀이 맡는다. 문의를 받으면 담당 팀으로 연결한다.</p>
+  <div class="not-our-job">
+    <ul>
+      <li>초청 가족 명단 / 접수 &rarr; 새가족팀</li>
+      <li>식사 동선 안내 (3층 입구) &rarr; 안내팀</li>
+      <li>초청 가족 옆에 앉을 교인 조율 &rarr; 새가족팀 / 목장 리더</li>
+      <li>식탁 / 의자 대량 이동 &rarr; 차량관리팀 지원</li>
+      <li>카페 쿠폰 지급 &rarr; 새가족팀</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="icon">8</span> 비상 상황 대응</h2>
+  <table>
+    <thead><tr><th style="width:35%;">상황</th><th>대응</th></tr></thead>
+    <tbody>
+      <tr><td>식사 인원이 예상보다 많음</td><td>밥 / 국 추가 조리, 반찬 재분배, 기획팀에 보고</td></tr>
+      <tr><td>식재료 부족</td><td>인근 마트 긴급 구매 (기획팀 예산 승인), 메뉴 축소 운영</td></tr>
+      <tr><td>가스 / 전기 문제</td><td>차량관리팀에 즉시 보고, 안전 확보 후 대체 방안</td></tr>
+      <tr><td>식중독 의심 증상</td><td>해당 음식 즉시 제거, 기획팀 / 담임목사 보고, 필요 시 119</td></tr>
+      <tr><td>알레르기 문의</td><td>식재료 목록 안내, 해당 음식 섭취 주의 안내</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">9</span> 협업 포인트</h2>
+  <table>
+    <thead><tr><th>협업 팀</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td>새가족팀</td><td>초청 가족 예상 인원 / 명단 공유, 함께 앉을 교인 조율</td></tr>
+      <tr><td>안내팀</td><td>3층 식사 동선 안내</td></tr>
+      <tr><td>목장 리더</td><td>초청 가족과 자연스럽게 함께 식사</td></tr>
+      <tr><td>차량관리팀</td><td>식탁 / 의자 이동, 시설 문제 대응</td></tr>
+      <tr><td>기획팀</td><td>예산, 인원 변동, 비상 판단</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="icon">10</span> 연락 체계</h2>
+  <div class="contact-grid">
+    <div class="contact-card"><div class="role">전체 총괄</div><div class="name">반승상 목사</div></div>
+    <div class="contact-card"><div class="role">기획팀 총괄</div><div class="name">김정상 장로</div></div>
+    <div class="contact-card"><div class="role">기획 실무</div><div class="name">한민석 목사</div></div>
+    <div class="contact-card highlight"><div class="role">주방팀</div><div class="name">이미숙 집사</div></div>
+    <div class="contact-card"><div class="role">새가족팀</div><div class="name">문영희 권사</div></div>
+    <div class="contact-card"><div class="role">안내팀</div><div class="name">김영이 권사</div></div>
+    <div class="contact-card"><div class="role">차량관리팀</div><div class="name">송영재 장로</div></div>
+    <div class="contact-card"><div class="role">교육팀 (사진관)</div><div class="name">장남제 장로 / 김도현 전도사</div></div>
+  </div>
+</section>
+
+<footer>
+  선린교회 Flower Family Festa 2026 | 주방팀 현장 매뉴얼
+</footer>
+
+</div>
+</body>
+</html>
