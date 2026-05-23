@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>새가족팀 현장 매뉴얼 — Flower Family Festa 2026</title>
+<style>
+:root {
+  --primary: #6d4c8d;
+  --primary-light: #ede7f6;
+  --primary-dark: #4a2c6a;
+  --accent: #e8833a;
+  --accent-light: #fff3e0;
+  --bg: #fafafa;
+  --text: #1a1a1a;
+  --text-light: #555;
+  --border: #e0e0e0;
+  --card-bg: #ffffff;
+  --section-gap: 2rem;
+  --warm: #c0392b;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 15px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+header {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border-radius: 16px;
+  margin-bottom: var(--section-gap);
+}
+header .badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.5px;
+}
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+header .subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+header .event-info {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+.mission-box {
+  background: var(--primary-light);
+  border-left: 5px solid var(--primary);
+  padding: 1.2rem 1.5rem;
+  border-radius: 0 12px 12px 0;
+  margin-bottom: var(--section-gap);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+section {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: var(--section-gap);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  border: 1px solid var(--border);
+}
+section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+section h2 .icon {
+  width: 28px;
+  height: 28px;
+  background: var(--primary-light);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 1.2rem 0 0.6rem;
+  padding: 0.4rem 0.8rem;
+  background: var(--primary-light);
+  border-radius: 6px;
+  display: inline-block;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8rem 0;
+  font-size: 0.9rem;
+}
+th {
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+th:first-child { border-radius: 8px 0 0 0; }
+th:last-child { border-radius: 0 8px 0 0; }
+td {
+  padding: 0.55rem 0.8rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+tr:nth-child(even) td { background: #f8f9fa; }
+tr:last-child td { border-bottom: none; }
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+.checklist li {
+  padding: 0.4rem 0 0.4rem 1.8rem;
+  position: relative;
+  border-bottom: 1px solid #f0f0f0;
+}
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--primary);
+  border-radius: 3px;
+}
+.ment-table td:first-child {
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--primary-dark);
+  width: 140px;
+}
+.ment-table td:last-child {
+  color: var(--text);
+  font-style: italic;
+}
+.alert-box {
+  background: var(--accent-light);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.2rem;
+  border-radius: 0 8px 8px 0;
+  margin: 0.8rem 0;
+  font-size: 0.9rem;
+}
+.alert-box strong { color: var(--accent); }
+.timeline-highlight {
+  font-weight: 700;
+  color: var(--primary);
+}
+.step-flow {
+  counter-reset: step-counter;
+  list-style: none;
+  padding: 0;
+}
+.step-flow li {
+  position: relative;
+  padding: 0.8rem 0 0.8rem 3rem;
+  border-bottom: 1px solid #f0f0f0;
+  border-left: 3px solid var(--primary-light);
+  margin-left: 0.8rem;
+}
+.step-flow li:last-child { border-bottom: none; }
+.step-flow li::before {
+  counter-increment: step-counter;
+  content: counter(step-counter);
+  position: absolute;
+  left: -14px;
+  top: 0.8rem;
+  width: 26px;
+  height: 26px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.step-flow li strong {
+  color: var(--primary-dark);
+}
+.step-flow li .sub {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-top: 0.2rem;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.contact-card {
+  padding: 0.6rem 0.8rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+.contact-card.highlight {
+  background: var(--primary-light);
+  border: 1px solid var(--primary);
+}
+.contact-card .role { font-size: 0.75rem; color: var(--text-light); }
+.contact-card .name { font-weight: 700; }
+.post-care {
+  background: linear-gradient(135deg, #f3e5f5, #ede7f6);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin-top: 0.6rem;
+}
+.post-care td:first-child {
+  font-weight: 600;
+  color: var(--primary);
+  white-space: nowrap;
+}
+.collab-table td:nth-child(2) {
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+.collab-table td:nth-child(3) {
+  font-size: 0.85rem;
+}
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--text-light);
+  font-size: 0.8rem;
+}
+@media print {
+  body { background: white; font-size: 13px; }
+  .container { padding: 0; max-width: 100%; }
+  header { border-radius: 0; padding: 1.5rem; }
+  section { box-shadow: none; border: 1px solid #ddd; page-break-inside: avoid; }
+  h3 { page-break-after: avoid; }
+  .checklist li::before { border-color: #333; }
+  .step-flow li::before { background: #333; }
+  .post-care { background: #f5f5f5; }
+}
+@media (max-width: 600px) {
+  .container { padding: 1rem; }
+  header { padding: 1.5rem 1rem; border-radius: 12px; }
+  header h1 { font-size: 1.4rem; }
+  section { padding: 1rem; }
+  .contact-grid { grid-template-columns: 1fr; }
+  table { font-size: 0.82rem; }
+  td, th { padding: 0.4rem 0.5rem; }
+  .step-flow li { padding-left: 2.5rem; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="badge">FLOWER FAMILY FESTA</div>
+  <h1>새가족팀 현장 매뉴얼</h1>
+  <div class="subtitle">창립 72주년 감사예배 및 홈커밍</div>
+  <div class="event-info">2026년 06월 07일(주일) 오전 11시 | 선린교회 | 담당: 문영희 권사</div>
+</header>
+
+<div class="mission-box">
+  "누가 왔고, 어떻게 이어갈 것인가?"에 답하는 팀<br>
+  <span style="font-weight:400; font-size:0.9rem; color:var(--text-light);">안내팀은 공간과 동선을 맡고, 새가족팀은 사람과 관계를 맡는다.</span>
+</div>
+
+<!-- 1. 행사 개요 -->
+<section>
+  <h2><span class="icon">1</span> 행사 개요</h2>
+  <table>
+    <tr><td style="font-weight:600; width:120px;">행사명</td><td>Flower Family Festa</td></tr>
+    <tr><td style="font-weight:600;">부제</td><td>꽃은 혼자 피지 않습니다</td></tr>
+    <tr><td style="font-weight:600;">환대의 언어</td><td>당신이 있어 행복합니다</td></tr>
+    <tr><td style="font-weight:600;">핵심 대상</td><td>교인의 직계 가족 중 미출석자</td></tr>
+    <tr><td style="font-weight:600;">핵심 목표</td><td>미출석 가족 회복, 관계적 환대, 사후 관리 연결</td></tr>
+  </table>
+</section>
+
+<!-- 2. 교회 공간 안내 -->
+<section>
+  <h2><span class="icon">2</span> 교회 공간 안내</h2>
+  <table>
+    <thead><tr><th>층</th><th>공간</th><th>당일 용도</th></tr></thead>
+    <tbody>
+      <tr><td>1층</td><td>로비</td><td>초청 가족 접수, 자유 포토존, 첫 안내 거점</td></tr>
+      <tr><td>1층</td><td>주차장·입구</td><td>차량 안내, 첫 인사</td></tr>
+      <tr><td>지하</td><td>사랑채플</td><td>예배실 (본당)</td></tr>
+      <tr><td>3층</td><td>주방·복도</td><td>애찬 장소, 기대카드 전시</td></tr>
+      <tr><td>4층</td><td>소망채플</td><td>가족사진 스튜디오</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 3. 당일 전체 타임라인 -->
+<section>
+  <h2><span class="icon">3</span> 당일 전체 타임라인</h2>
+  <table>
+    <thead><tr><th>시간</th><th>흐름</th><th>안내팀</th><th>새가족팀</th></tr></thead>
+    <tbody>
+      <tr><td class="timeline-highlight">10:00</td><td>집결·안내 시작</td><td>공간 점검 후 로비·예배실 배치</td><td>접수처 세팅, 접수 준비</td></tr>
+      <tr><td class="timeline-highlight">10:30</td><td>초청 가족 도착</td><td>접수 위치까지 안내</td><td>접수 운영 시작</td></tr>
+      <tr><td class="timeline-highlight">10:55</td><td>예배 직전</td><td>좌석 안내 마무리</td><td>초청 가족 곁 확인</td></tr>
+      <tr><td class="timeline-highlight">11:00</td><td>예배 시작</td><td>예배실 출입 관리</td><td>예배 중 환대</td></tr>
+      <tr><td class="timeline-highlight">12:00</td><td>예배 종료</td><td>사진관·애찬 동선</td><td>사진·쿠폰·애찬 연결</td></tr>
+      <tr><td class="timeline-highlight">12:30</td><td>애찬</td><td>식사 동선 정리</td><td>초청 가족 동행</td></tr>
+      <tr><td class="timeline-highlight">13:00</td><td>마무리</td><td>귀가 안내, 정리</td><td>명단 1차 정리</td></tr>
+      <tr><td class="timeline-highlight">13:30</td><td>철수</td><td>원상복구</td><td>교역자 전달</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 4. 행사 전 준비 -->
+<section>
+  <h2><span class="icon">4</span> 행사 전 준비</h2>
+
+  <h3>D-7 (05월 31일까지)</h3>
+  <ul class="checklist">
+    <li>접수표 최종 항목 확정 및 인쇄</li>
+    <li>QR 기도카드 네이버 폼 완성 및 테스트</li>
+    <li>종이 기도카드 양식 인쇄</li>
+    <li>SMS·영상 링크 수신 동의 문구 확정</li>
+    <li>카페 쿠폰 수량 확인 (1만 원권 x 50매 기준)</li>
+    <li>목장별 후속 담당자 명단 확인</li>
+    <li>행사 후 감사 연락 문안 준비</li>
+    <li>새가족팀 당일 배치 인원 확정</li>
+    <li>꽃 한 송이·메시지 카드 수량 확인</li>
+  </ul>
+
+  <h3>D-1 (06월 06일)</h3>
+  <ul class="checklist">
+    <li>접수표, 기도카드, 쿠폰, 필기구 등 물품 최종 점검</li>
+    <li>접수 테이블·의자 배치 확인 (1층 로비)</li>
+    <li>QR 코드 인쇄물 준비 (테이블 위·꽃 카드 부착용)</li>
+    <li>꽃 한 송이 보관 위치 확인</li>
+    <li>새가족팀 인원에게 역할 최종 안내</li>
+  </ul>
+</section>
+
+<!-- 5. 시간대별 상세 동선 -->
+<section>
+  <h2><span class="icon">5</span> 시간대별 상세 동선</h2>
+
+  <h3>10:00~10:30 — 집결·접수처 세팅·초기 도착자 응대</h3>
+  <ul class="checklist">
+    <li>새가족팀 전원 1층 로비 접수 위치 집결</li>
+    <li>접수 테이블 세팅: 접수표, 필기구, QR 기도카드 안내판, 종이 기도카드, 카페 쿠폰</li>
+    <li>꽃 한 송이 배치 — 초청자가 가족에게 전달할 수 있도록 준비</li>
+    <li>접수 흐름 최종 리허설: 팀원 간 역할 분담 확인
+      <br><span style="font-size:0.85rem; color:var(--text-light);">접수 담당 (명단 확인·기록) / 안내 담당 (기도카드·쿠폰·사진 안내) / 환대 담당 (예배실까지 동행)</span>
+    </li>
+    <li>안내팀과 합류하여 핸드오프 지점 확인: "안내팀이 여기까지 안내하면, 여기서 우리가 받는다"</li>
+    <li>접수 테이블 오픈</li>
+    <li>일찍 도착하는 초청 가족 응대 — 여유 있게 환대</li>
+    <li>초청자(교인)가 함께 왔는지 확인</li>
+    <li>초청자가 먼저 와서 가족을 기다리는 경우: "가족분이 오시면 저희가 함께 안내해 드리겠습니다"</li>
+  </ul>
+
+  <h3>10:30~10:55 — 접수 운영 (집중 시간)</h3>
+  <div class="alert-box">
+    <strong>핵심 시간대</strong> — 대부분의 초청 가족이 이 시간에 도착합니다. 접수 흐름을 숙지해 주세요.
+  </div>
+
+  <h3>11:00~12:00 — 예배 중 환대</h3>
+  <ul class="checklist">
+    <li>접수 테이블에 1명 대기 (늦은 도착자 대비)</li>
+    <li>나머지 팀원은 예배실에서 초청 가족 근처에 자리</li>
+    <li>초청 가족이 예배 흐름에서 소외되지 않도록 살피기</li>
+    <li>초청자가 가족 곁에 함께 있는지 확인</li>
+    <li>내부자만 아는 표현(헌금 방법, 순서지 보는 법 등)으로 당황하는 분이 있으면 조용히 설명</li>
+    <li>꽃 전달 순서 진행 시 — 초청자가 가족에게 직접 건네도록 돕기</li>
+    <li>QR 기도카드 작성 안내가 매끄럽게 이어지도록 보조</li>
+  </ul>
+
+  <h3>12:00~13:00 — 예배 후 연결</h3>
+  <ul class="checklist">
+    <li>접수 테이블로 돌아와 예배 후 안내 준비</li>
+    <li>가족사진 촬영 신청 가족에게 4층 이동 안내</li>
+    <li>카페 쿠폰 미수령 가족에게 전달</li>
+    <li>애찬 안내: 초청 가족이 혼자 식사하지 않도록 초청자·목장 섬김이와 연결</li>
+    <li>기도카드 미작성 가족에게 부담 없이 재안내</li>
+    <li>바로 귀가하는 초청 가족에게도 감사 인사</li>
+    <li>귀가 시 후속 연락 가능 여부 자연스럽게 확인</li>
+    <li>교역자에게 바로 공유해야 할 목회적 돌봄 사항 수시 확인</li>
+  </ul>
+
+  <h3>13:00~13:30 — 정리·명단 1차 정리</h3>
+  <ul class="checklist">
+    <li>접수표 수합 및 기록 누락 확인</li>
+    <li>종이 기도카드 수합</li>
+    <li>카페 쿠폰 지급 수량·잔여 수량 정리</li>
+    <li>가족사진 신청 명단과 실제 촬영 명단 대조 (교육팀과 확인)</li>
+    <li>접수 물품 정리, 테이블 철수</li>
+    <li>새가족팀 간단 피드백: 특이사항, 목회적 돌봄 필요 가족, 재방문 가능성 높은 가족 공유</li>
+    <li>접수 자료를 교역자에게 전달</li>
+  </ul>
+</section>
+
+<!-- 6. 접수 흐름 (8단계) -->
+<section>
+  <h2><span class="icon">6</span> 접수 흐름 8단계</h2>
+  <ol class="step-flow">
+    <li>
+      <strong>맞이 인사</strong>
+      <span class="sub">"오늘 함께 와 주셔서 감사합니다. 불편하지 않게 저희가 돕겠습니다."</span>
+    </li>
+    <li>
+      <strong>초청자 확인</strong>
+      <span class="sub">"어느 분과 함께 오셨는지만 간단히 확인하겠습니다."<br>초청자 이름, 초청 가족 이름, 관계(배우자·부모·자녀·형제자매 등) 기록</span>
+    </li>
+    <li>
+      <strong>참석 구분 확인</strong>
+      <span class="sub">처음 방문 / 장기 미출석 / 간헐 출석 구분 (자연스럽게 파악, 직접 묻지 않아도 됨)</span>
+    </li>
+    <li>
+      <strong>기도카드 안내</strong>
+      <span class="sub">"오늘 드리는 꽃에 기도카드가 함께 있습니다. 부담 없이 적으셔도 되고, 가족분이 대신 적어 주셔도 됩니다."<br>QR 사용이 어려운 분에게는 종이 기도카드 안내</span>
+    </li>
+    <li>
+      <strong>가족사진 신청 확인</strong>
+      <span class="sub">"예배 후 4층에서 가족사진을 촬영합니다. 신청하시겠습니까?"<br>신청 시 시간대 배정 (교육팀 시간표 기준)</span>
+    </li>
+    <li>
+      <strong>카페 쿠폰 안내</strong>
+      <span class="sub">새로 온 미출석자 1인당 1장 (1만 원권). 대가족은 접수 담당자 재량으로 추가 지급 가능<br>"감사의 마음으로 카페 쿠폰을 준비했습니다."</span>
+    </li>
+    <li>
+      <strong>수신 동의 확인</strong>
+      <span class="sub">예배 영상, 가족사진, 감사 연락 발송 동의 여부 확인. 동의한 경우만 이후 연락 진행</span>
+    </li>
+    <li>
+      <strong>예배실 안내</strong>
+      <span class="sub">접수를 마친 초청 가족을 사랑채플로 안내. 초청자와 함께 앉도록 배려. 환대 담당이 근처에 위치</span>
+    </li>
+  </ol>
+</section>
+
+<!-- 7. 접수표 항목 -->
+<section>
+  <h2><span class="icon">7</span> 접수표 항목</h2>
+  <table>
+    <thead><tr><th>번호</th><th>항목</th><th>기록 목적</th><th>기록 요령</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>초청자</td><td>후속 연결 기준</td><td>교인 이름 기재</td></tr>
+      <tr><td>2</td><td>초청 가족 이름</td><td>감사 연락·기도 관리</td><td>성명만. 공개 문서 불가</td></tr>
+      <tr><td>3</td><td>관계</td><td>직계 가족 흐름 파악</td><td>배우자, 부모, 자녀 등</td></tr>
+      <tr><td>4</td><td>참석 구분</td><td>후속 관리 강도 판단</td><td>처음 / 장기 미출석 / 간헐</td></tr>
+      <tr><td>5</td><td>연결 가능 목장</td><td>사후 관리 주체 확인</td><td>목자·섬김이 또는 목장명</td></tr>
+      <tr><td>6</td><td>기도카드 작성</td><td>기도 제목 관리</td><td>QR / 종이 구분</td></tr>
+      <tr><td>7</td><td>수신 동의</td><td>영상·사진·연락 발송</td><td>동의함 / 미동의</td></tr>
+      <tr><td>8</td><td>가족사진 신청</td><td>사진관 운영</td><td>신청 시 시간대 기재</td></tr>
+      <tr><td>9</td><td>카페 쿠폰 지급</td><td>예산·쿠폰 관리</td><td>지급 매수 기재</td></tr>
+      <tr><td>10</td><td>후속 메모</td><td>목회적 필요, 재방문</td><td>핵심만 간결하게</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 8. 현장 멘트 모음 -->
+<section>
+  <h2><span class="icon">8</span> 현장 멘트 모음</h2>
+
+  <h3>접수 시</h3>
+  <table class="ment-table">
+    <tr><td>첫 인사</td><td>"오늘 함께 와 주셔서 감사합니다. 불편하지 않게 저희가 돕겠습니다."</td></tr>
+    <tr><td>초청자 확인</td><td>"어느 분과 함께 오셨는지만 간단히 확인하겠습니다."</td></tr>
+    <tr><td>기도카드 안내</td><td>"기도카드는 부담 없이 적으셔도 되고, 가족분이 대신 적어 주셔도 됩니다."</td></tr>
+    <tr><td>사진 안내</td><td>"예배 후 4층에서 가족사진을 찍으실 수 있습니다. 신청해 드릴까요?"</td></tr>
+    <tr><td>쿠폰 안내</td><td>"감사의 마음으로 카페 쿠폰을 준비했습니다."</td></tr>
+  </table>
+
+  <h3>예배 중</h3>
+  <table class="ment-table">
+    <tr><td>예배 흐름 보조</td><td>(속삭이며) "지금은 찬양 시간입니다. 편하게 따라 하시면 됩니다."</td></tr>
+    <tr><td>헌금 안내</td><td>(속삭이며) "헌금은 자유입니다. 편하게 계시면 됩니다."</td></tr>
+    <tr><td>꽃 전달 순서</td><td>(초청자에게) "지금 가족분에게 꽃을 전해 주시면 됩니다."</td></tr>
+  </table>
+
+  <h3>예배 후</h3>
+  <table class="ment-table">
+    <tr><td>사진 촬영 이동</td><td>"사진 촬영 시간이 되었습니다. 4층으로 함께 이동하시겠습니까?"</td></tr>
+    <tr><td>애찬 안내</td><td>"3층에 식사가 준비되어 있습니다. 함께 가시겠습니까?"</td></tr>
+    <tr><td>쿠폰 미수령</td><td>"혹시 카페 쿠폰을 아직 받지 못하셨으면 여기서 드리겠습니다."</td></tr>
+  </table>
+
+  <h3>귀가 시</h3>
+  <table class="ment-table">
+    <tr><td>감사 인사</td><td>"오늘 오신 것이 좋은 기억으로 남으셨으면 합니다. 감사합니다."</td></tr>
+    <tr><td>후속 연락 확인</td><td>"혹시 예배 영상이나 가족사진을 보내드려도 괜찮을까요?"</td></tr>
+    <tr><td>마무리</td><td>"오늘 오신 것이 좋은 기억이 되셨기를 기도합니다."</td></tr>
+  </table>
+</section>
+
+<!-- 9. 사후 관리 -->
+<section>
+  <h2><span class="icon">9</span> 사후 관리 (D+1 ~ D+7)</h2>
+  <div class="post-care">
+  <table>
+    <thead><tr><th>일정</th><th>내용</th><th>담당</th></tr></thead>
+    <tbody>
+      <tr><td>D+1~2</td><td>참석 가족 명단 최종 정리 (초청자, 관계, 참석 구분, 기도 제목, 수신 동의, 목장 연결)</td><td>새가족팀</td></tr>
+      <tr><td>D+1~2</td><td>QR 기도카드 응답 취합 (네이버 폼)</td><td>새가족팀</td></tr>
+      <tr><td>D+3~5</td><td>감사 연락 발송 (수신 동의 가족만)</td><td>새가족팀·교역자</td></tr>
+      <tr><td>D+3~5</td><td>예배 영상·찬양 영상·가족사진 다운로드 안내 전달</td><td>새가족팀·방송팀</td></tr>
+      <tr><td>D+3~7</td><td>목장 연결 가능 가족을 목자·섬김이에게 공유</td><td>새가족팀·교역자</td></tr>
+      <tr><td>D+7</td><td>목장별 후속 연락 실제 진행 여부 확인</td><td>새가족팀</td></tr>
+      <tr><td>D+7</td><td>재방문 가능성 높은 가족을 교역자와 공유</td><td>새가족팀</td></tr>
+      <tr><td>장기</td><td>6개월~1년 관계 형성 여부 기록</td><td>새가족팀·목장</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- 10. 비상 상황 대응 -->
+<section>
+  <h2><span class="icon">10</span> 비상 상황 대응</h2>
+  <table>
+    <thead><tr><th style="width:200px;">상황</th><th>대응</th></tr></thead>
+    <tbody>
+      <tr><td style="font-weight:600;">접수 대기가 길어짐</td><td>접수 인원 추가 투입. 간단한 환영 인사만 먼저 하고 세부 기록은 예배 후 보충</td></tr>
+      <tr><td style="font-weight:600;">초청자 없이 가족만 온 경우</td><td>새가족팀이 초청자 역할을 대신하여 곁에서 안내. 교역자에게 바로 공유</td></tr>
+      <tr><td style="font-weight:600;">기도카드 작성을 꺼리는 경우</td><td>강요하지 않음. "나중에 마음이 드시면 언제든 적어 주셔도 됩니다"</td></tr>
+      <tr><td style="font-weight:600;">쿠폰 수량 부족</td><td>기획팀에 즉시 알림. 예비비로 추가 구매 가능 여부 확인</td></tr>
+      <tr><td style="font-weight:600;">예배 중 불편해하는 경우</td><td>자연스럽게 로비로 나와 쉴 수 있도록 안내. 억지로 붙잡지 않음</td></tr>
+      <tr><td style="font-weight:600;">목회적 돌봄 즉시 필요</td><td>교역자에게 바로 연결 (담임목사 또는 부교역자)</td></tr>
+      <tr><td style="font-weight:600;">접수표 분실·기록 누락</td><td>예비 접수표 사용. 예배 후 초청자에게 확인하여 보충</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 11. 안내팀과의 협업 포인트 -->
+<section>
+  <h2><span class="icon">11</span> 안내팀과의 협업 포인트</h2>
+  <table class="collab-table">
+    <thead><tr><th>지점</th><th>안내팀 → 새가족팀</th><th>새가족팀 → 안내팀</th></tr></thead>
+    <tbody>
+      <tr><td style="font-weight:600;">로비 접수</td><td>초청 가족을 접수 테이블까지 안내 후 인계</td><td>—</td></tr>
+      <tr><td style="font-weight:600;">예배실 좌석</td><td>초청 가족 좌석 위치를 새가족팀에 공유</td><td>좌석을 못 찾으면 안내팀에 요청</td></tr>
+      <tr><td style="font-weight:600;">4층 사진관</td><td>사진관 이동 동선 안내</td><td>촬영 신청 가족 명단 공유 (대기 관리)</td></tr>
+      <tr><td style="font-weight:600;">애찬</td><td>식사 동선 안내</td><td>초청 가족 식사 자리 배려 요청</td></tr>
+      <tr><td style="font-weight:600;">쿠폰·기도카드 문의</td><td>"새가족팀 접수 지점에서 안내해 드립니다"로 연결</td><td>—</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 12. 연락 체계 -->
+<section>
+  <h2><span class="icon">12</span> 연락 체계</h2>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="role">전체 총괄</div>
+      <div class="name">반승상 목사 (담임)</div>
+    </div>
+    <div class="contact-card">
+      <div class="role">기획팀 총괄</div>
+      <div class="name">김정상 장로</div>
+    </div>
+    <div class="contact-card">
+      <div class="role">기획 실무</div>
+      <div class="name">한민석 목사</div>
+    </div>
+    <div class="contact-card">
+      <div class="role">안내팀</div>
+      <div class="name">김영이 권사</div>
+    </div>
+    <div class="contact-card highlight">
+      <div class="role">새가족팀</div>
+      <div class="name">문영희 권사</div>
+    </div>
+    <div class="contact-card">
+      <div class="role">교육팀 (사진관)</div>
+      <div class="name">장남제 피택 장로, 김도현 전도사</div>
+    </div>
+    <div class="contact-card">
+      <div class="role">주방팀</div>
+      <div class="name">이미숙 집사</div>
+    </div>
+    <div class="contact-card">
+      <div class="role">차량관리팀</div>
+      <div class="name">송영재 장로</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Flower Family Festa — 새가족팀 현장 매뉴얼 | 선린교회 창립 72주년 감사예배
+</footer>
+
+</div>
+</body>
+</html>
